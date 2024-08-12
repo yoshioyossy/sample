@@ -115,10 +115,13 @@ header {
   padding: 80px 5% 80px 5%;
   background-color: #f7f7f7;
   text-align: center;
-  display: flex;          /* ここを変更 */
-  flex-wrap: wrap;        /* ここを変更 */
-  justify-content: space-between; /* ここを変更 */
-  height: auto;           /* ここを変更 */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: auto;
+  /* 幅を広げるための調整 */
+  max-width: 1200px; /* 必要に応じて最大幅を設定 */
+  margin: 0 auto; /* 中央揃えにする */
 }
 
 .heading {
@@ -204,17 +207,19 @@ footer {
   clear: left;
 }
 
+/* メディアクエリの調整 */
 @media all and (max-width: 1000px) {
   .lesson {
-    width: 48%;           /* ここを変更 */
-    margin-bottom: 30px;  /* ここを変更 */
+    width: 48%;
+    margin-bottom: 30px;
   }
 }
 
 @media all and (max-width: 670px) {
-  .header-right {
-    display: none;
+  .lesson {
+    width: 100%;
   }
+}
 
   .menu-icon {
     display: block;
