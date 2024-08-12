@@ -112,12 +112,13 @@ header {
 }
 
 .lesson-wrapper {
-  height: 580px;
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 80px 5% 80px 5%;
   background-color: #f7f7f7;
   text-align: center;
+  display: flex;          /* ここを変更 */
+  flex-wrap: wrap;        /* ここを変更 */
+  justify-content: space-between; /* ここを変更 */
+  height: auto;           /* ここを変更 */
 }
 
 .heading {
@@ -131,8 +132,8 @@ header {
 }
 
 .lesson {
-  float: left;
-  width: 25%;
+  width: 23%;             /* ここを変更 */
+  margin-bottom: 50px;    /* ここを追加 */
 }
 
 .lesson-icon {
@@ -205,26 +206,8 @@ footer {
 
 @media all and (max-width: 1000px) {
   .lesson {
-    width: 50%;
-    margin-bottom: 50px;
-  }
-
-  .lesson-wrapper {
-    height: 990px;
-  }
-
-  footer {
-    text-align: center;
-  }
-}
-
-@media all and (max-width: 750px) {
-  .top-wrapper h1 {
-    font-size: 32px;
-  }
-
-  .heading h2 {
-    font-size: 20px;
+    width: 48%;           /* ここを変更 */
+    margin-bottom: 30px;  /* ここを変更 */
   }
 }
 
@@ -258,11 +241,11 @@ footer {
   }
 
   .lesson {
-    width: 100%;
+    width: 100%;          /* ここを変更 */
   }
 
   .lesson-wrapper {
-    height: 1700px;
+    height: auto;         /* ここを変更 */
   }
 
   .message-wrapper .btn {
